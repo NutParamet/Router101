@@ -7,7 +7,7 @@ export default function Index({ products }) {
         <AuthenticatedLayout>
             <div className="bg-white">
                 <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                    <div className='rounded border-current border-2	py-5'>
+                    <div className='rounded-md border-current border-2	py-5'>
                         <p className='text-3xl text-center'>Products</p>
                     </div>
 
@@ -17,10 +17,10 @@ export default function Index({ products }) {
                                 <img
                                     alt={product.name}
                                     src={product.image}
-                                    className="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+                                    className="aspect-square w-full rounded-lg bg-white object-cover group-hover:opacity-75 xl:aspect-[7/8]"
                                 />
                                 <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-                                <p className="mt-1 text-lg font-medium text-gray-900">${product.price}</p>
+                                <p className="mt-1 text-lg font-medium text-gray-900 ">${product.price}</p>
                             </Link>
                         ))}
                     </div>

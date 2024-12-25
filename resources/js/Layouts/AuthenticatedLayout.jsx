@@ -138,7 +138,7 @@ export default function AuthenticatedLayout({ header, children }) {
                             Dashboard
                         </ResponsiveNavLink>
                         <ResponsiveNavLink href={route('products.index')} active={route().current('products.index')}>
-                            Chirps
+                            Products
                         </ResponsiveNavLink>
                     </div>
 
